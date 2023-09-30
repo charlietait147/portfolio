@@ -1,4 +1,4 @@
-import "./Description.scss";
+import "./Description.css";
 function Description() {
     return ( <div>Description section</div> );
 }
