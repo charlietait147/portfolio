@@ -1,0 +1,39 @@
+.header{
+    &__container{
+        
+        height: 35rem;
+       
+        //TABLET STYLING
+        // display: flex;
+        // max-width: 1020px;
+        // margin: auto;
+    }
+
+    &__text-container{
+        
+        background-color: black;
+        //TABLET STYLING
+        // width: 50%;
+    }
+
+    &__image-container{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid black;
+
+        //TABLET STYLING
+        // width: 50%;
+        
+    }
+
+    &__image{
+        width: 50%;
+        height: 100%;
+        opacity: 0.75;
+
+        // TABLET STYLING
+        // width: 100%;
+        // height: 100%;
+        // opacity: 0.75;
+    }
+}
