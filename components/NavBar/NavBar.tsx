@@ -1,7 +1,11 @@
 import "./NavBar.scss";
 function NavBar() {
     return (
-        <div>NavBar section</div>
+        <nav className = "nav">
+            <div className="nav__wrapper">
+                <p className="nav__logo">Charlie.</p>
+            </div>
+        </nav>
       );
 }
 
