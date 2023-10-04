@@ -1,3 +1,4 @@
+
 import "./Projects.scss";
 import Image from "next/image";
 import homeEcoEarnerImg from "../../public/assets/images/HomeEcoEarner.png";
