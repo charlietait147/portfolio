@@ -27,6 +27,10 @@ function Projects() {
             energy company.
           </p>
         </div>
+        <div className="projects__button-container">
+          <button className="projects__button projects__button--demo">WATCH DEMO</button>
+          <button className="projects__button">MORE DETAILS</button>
+        </div>
       </div>
     </section>
   );
