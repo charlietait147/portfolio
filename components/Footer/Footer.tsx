@@ -2,6 +2,7 @@
 import "./Footer.scss";
 import CIcon from "@coreui/icons-react";
 import { cibLinkedin, cibGithub, cibGmail } from "@coreui/icons";
+import Link from "next/link";
 function Footer() {
   return (
     <footer className="footer">
@@ -9,9 +10,15 @@ function Footer() {
         <span className="footer__headline">Let's Connect</span>
       </div>
       <div className="footer__icon-container">
-        <CIcon icon={cibGithub} className="footer__icon" />
-        <CIcon icon={cibGmail} className="footer__icon" />
-        <CIcon icon={cibLinkedin} className="footer__icon" />
+        <div className="footer__icon-background">
+          <Link href="https://github.com/charlietait147"><CIcon icon={cibGithub} className="footer__icon" /></Link>
+        </div>
+        <div className="footer__icon-background">
+          <Link href="mailto:charlietait1@gmail.com"><CIcon icon={cibGmail} className="footer__icon" /></Link>
+        </div>
+        <div className="footer__icon-background">
+          <Link href="https://www.linkedin.com/in/charlie-tait/"><CIcon icon={cibLinkedin} className="footer__icon" /></Link>
+        </div>
       </div>
       <p className="footer__email">charlietait1@gmail.com</p>
       <div className="footer__copyright-container">
