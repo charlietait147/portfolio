@@ -9,6 +9,7 @@ import adminLoginPage from "../../public/assets/images/AdminLoginPage.png";
 import adminDatabase from "../../public/assets/images/AdminDatabase.png";
 import CIcon from "@coreui/icons-react";
 import { cilMediaPlay, cibGithub } from "@coreui/icons";
+import Link from "next/link"
 function ProjectContent() {
   return (
     <main className="project-content">
@@ -51,12 +52,12 @@ function ProjectContent() {
         </div>
         <ul className="project-content__links-list">
             <div className="project-content__link-container">
-                <li className="project-content__link">Demo</li>
-                <CIcon icon={cilMediaPlay} className="project-content__icon" />
+                <li className="project-content__item"><Link className="project-content__link" href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4">Demo</Link></li>
+                <Link href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4"><CIcon icon={cilMediaPlay} className="project-content__icon" /></Link>
             </div>
             <div className="project-content__link-container">
-                <li className="project-content__link">GitHub</li>
-                <CIcon icon={cibGithub} className="project-content__icon" />
+                <li className="project-content__item"><Link className="project-content__link" href="https://github.com/charlietait147/HomeEcoEarner-client">GitHub</Link></li>
+                <Link href="https://github.com/charlietait147/HomeEcoEarner-client"><CIcon icon={cibGithub} className="project-content__icon" /></Link>
             </div>
         </ul>
       </section>
