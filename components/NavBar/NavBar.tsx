@@ -3,7 +3,7 @@ function NavBar() {
     return (
         <nav className = "nav">
             <div className="nav__wrapper">
-                <p className="nav__logo">Charlie.</p>
+                <a href="/" className="nav__logo">Charlie.</a>
             </div>
         </nav>
       );
