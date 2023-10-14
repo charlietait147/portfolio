@@ -28,8 +28,8 @@ function Projects() {
           </p>
         </div>
         <div className="projects__button-container">
-          <button className="projects__button projects__button--demo">WATCH DEMO</button>
-          <button className="projects__button">MORE DETAILS</button>
+          <a href = "https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4" className="projects__button projects__button--demo">WATCH DEMO</a>
+          <a href="/projects/home-ecoearner" className="projects__button">MORE DETAILS</a>
         </div>
       </div>
     </section>
