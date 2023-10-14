@@ -37,6 +37,37 @@
         max-width: 100%
     }
 
+    &__links-list{
+        padding: 0;
+        background-color: #fff;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+        border-left: 1px solid rgba(0, 0, 0, 0.15); 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);  
+    }
+
+    &__link-container{
+        display: flex;
+
+    }
+
+    &__link{
+        font-size: 0.7rem;
+        border-radius: 4px;
+        padding: 0.25rem;
+    }
+
+    &__icon{
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0.15rem;
+        margin-left: 0.25rem;
+    }
+
     &__section{
         padding: 2rem 2rem 0rem;
     }

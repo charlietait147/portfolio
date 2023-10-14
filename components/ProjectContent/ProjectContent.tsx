@@ -1,3 +1,4 @@
+"use client"
 import "./ProjectContent.scss";
 import Image from "next/image";
 import homeEcoEarnerImg from "../../public/assets/images/HomeEcoEarner.png";
@@ -6,6 +7,8 @@ import newsPage from "../../public/assets/images/NewsPage.png";
 import contactPage from "../../public/assets/images/ContactPage.png";
 import adminLoginPage from "../../public/assets/images/AdminLoginPage.png";
 import adminDatabase from "../../public/assets/images/AdminDatabase.png";
+import CIcon from "@coreui/icons-react";
+import { cilMediaPlay, cibGithub } from "@coreui/icons";
 function ProjectContent() {
   return (
     <main className="project-content">
@@ -46,6 +49,16 @@ function ProjectContent() {
             <li className="project-content__tech-item">API</li>
           </ul>
         </div>
+        <ul className="project-content__links-list">
+            <div className="project-content__link-container">
+                <li className="project-content__link">Demo</li>
+                <CIcon icon={cilMediaPlay} className="project-content__icon" />
+            </div>
+            <div className="project-content__link-container">
+                <li className="project-content__link">GitHub</li>
+                <CIcon icon={cibGithub} className="project-content__icon" />
+            </div>
+        </ul>
       </section>
       <section id="background" className="project-content__section">
         <h2 className="project-content__section-title">Background</h2>
