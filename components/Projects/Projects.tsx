@@ -2,6 +2,7 @@
 import "./Projects.scss";
 import Image from "next/image";
 import homeEcoEarnerImg from "../../public/assets/images/HomeEcoEarner.png";
+import Link from "next/link"
 
 function Projects() {
   return (
@@ -10,11 +11,11 @@ function Projects() {
         <h3 className="projects__title">Projects</h3>
       </div>
       <div className="projects__projects-container">
-        <Image
+        <Link href="/projects/home-ecoearner"><Image
           className="projects__home-eco"
           src={homeEcoEarnerImg}
           alt="HomeEcoEarner project snippet"
-        />
+        /></Link>
         <div className="projects__text-container">
           <h4 className="projects__text-title">
             Home{" "}
