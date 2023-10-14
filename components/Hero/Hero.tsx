@@ -1,7 +1,9 @@
-"use client"
+"use client";
 import "./Hero.scss";
-import CIcon from "@coreui/icons-react";
-import { cilArrowThickToBottom } from "@coreui/icons";
+import downloadIcon from "../../public/assets/icons/download.png";
+import Image from "next/image";
+import Link from "next/link";
+
 function Hero() {
   return (
     <section className="hero">
@@ -21,8 +23,19 @@ function Hero() {
           productivity.{" "}
         </p>
         <div className="hero__download-CV-container">
-            <button className="hero__download-CV">DOWNLOAD CV</button>
-            <CIcon icon={cilArrowThickToBottom} className="hero__download-CV-icon" />
+          <a
+            href="https://drive.google.com/file/d/1myDWQy27oc7ff5oWyqqsLhyWVSxi07zD/view"
+            className="hero__download-CV"
+          >
+            DOWNLOAD CV
+          </a>
+          <Link href="https://drive.google.com/file/d/1myDWQy27oc7ff5oWyqqsLhyWVSxi07zD/view">
+            <Image
+              src={downloadIcon}
+              alt="download icon"
+              className="hero__download-CV-icon"
+            />
+          </Link>
         </div>
       </div>
     </section>
