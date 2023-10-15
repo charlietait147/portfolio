@@ -1,15 +1,17 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .project-content{
 
     &__header{
         padding: 1rem 2rem;
-        background: darkgreen;
+        background: $tertiary-background;
     }
 
     &__title{
        @include project-page-title;
         &--green{
-            color: green;
+            color: $highlighted-text;
             border: none;
             padding: 0;
         }
@@ -32,15 +34,15 @@
 
     &__links-list{
         padding: 0;
-        background-color: #fff;
+        background-color: $primary-background;
         padding: 0.5rem;
         display: flex;
         justify-content: space-around;
         list-style-type: none;
         margin: 0;
-        border-right: 1px solid rgba(0, 0, 0, 0.15);
-        border-left: 1px solid rgba(0, 0, 0, 0.15); 
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15);  
+        border-right: $secondary-border;
+        border-left: $secondary-border;
+        border-bottom: $secondary-border;
     }
 
     &__link-container{
@@ -50,7 +52,7 @@
 
     &__item{
         font-size: 0.7rem;
-        border-radius: 4px;
+        border-radius: $border-radius;
         padding: 0.25rem;
     }
 
@@ -71,7 +73,7 @@
     }
 
     &__section{
-        padding: 2rem 2rem 0rem;
+        padding: $mobile-padding $mobile-padding 0rem;
     }
 
     &__section-title{
@@ -79,7 +81,7 @@
     }
 
     &__tech-container{
-        border: 1px solid rgb(0,0,0,0.15);
+        border: $secondary-border;
         padding: 0.5rem;
         margin-top: 1rem;
         background-color: #D0E7D2;
@@ -101,13 +103,13 @@
     &__tech-item{
         position: relative;
         padding-left: 1rem;
-        color: darkslategray;
+        color: $primary-text;
 
         &::after{
             content: '';
             height: 0.4em;
             width: 0.4em;
-            background: darkgreen;
+            background: $tertiary-background;
             display: block;
             position: absolute;
             transform: rotate(45deg);
@@ -159,7 +161,7 @@
     }
 
     &__subtitle{
-        color: darkslategray;
+        color: $primary-text;
         font-weight: 600;
     }
 

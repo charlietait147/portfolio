@@ -1,4 +1,5 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 .footer {
   &__headline-container {
     @include main-page-container;
@@ -28,25 +29,25 @@
   }
 
   &__icon-background:hover{
-    background-color: #f0f0f0;
+    background-color: $link-hover-background;
   }
 
   &__icon {
     height: 1.25rem;
     width: 1.25rem;
     margin: 0.5rem 1rem;
-    cursor: pointer;
+    cursor: $cursor;
   }
 
   &__email {
-    text-align: center;
+    text-align: $text-align;
     font-size: 0.8rem;
     margin: 0;
     padding-top: 0.5rem;
   }
 
   &__copyright-container {
-    background-color: black;
+    background-color: $secondary-background;
     margin-top: 1rem;
     display: flex;
     justify-content: center;

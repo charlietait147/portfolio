@@ -1,5 +1,6 @@
+@use "../../styles/partials/variables" as *;
 .nav{
-    background-color: black;
+    background-color: $secondary-background;
   
     
     &__wrapper{
@@ -16,7 +17,7 @@
 
     &__logo,
     &__contact{
-        color: white;
+        color: $contrast;
         margin: 0;
     }
 }

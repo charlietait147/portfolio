@@ -1,13 +1,14 @@
+@use "../../styles/partials/variables" as *;
 .hero{
     &__wrapper{
-        padding: 1rem 2rem 0.5rem;
+        padding: 1rem $mobile-padding 0.5rem;
     }
 
     
     &__welcome{
         display: inline-block;
-        background-color: #444;
-        color: white;
+        background-color: $text-background;
+        color: $contrast;
         letter-spacing: 2px;
         padding: 0.5rem;
         margin: 0;
@@ -15,7 +16,7 @@
     }
 
     &__tagline{
-        color: white;
+        color: $contrast;
         font-size: 1.8rem;
         margin: 0;
         padding-top: 1rem;
@@ -31,7 +32,7 @@
     }
 
     &__job{
-        color: white;
+        color: $contrast;
         font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
@@ -39,7 +40,7 @@
     }
 
     &__description{
-        color: #b0b0b0;
+        color: $tertiary-text;
         font-size: 0.8rem;
         line-height: 1.7;
         &--bold{
@@ -58,7 +59,7 @@
         border: 2px solid; 
         border-color: rgba(255,255,255,0.5);
         background-color: transparent;
-        color:  #b0b0b0;
+        color:  $tertiary-text;
         padding: 0.75em 3em 0.75em 2em;
         font-size: 0.7rem;
         font-weight: 700;
@@ -66,18 +67,18 @@
     }
 
     &__download-CV:hover{
-        cursor: pointer;
-        color: #fff;
+        cursor: $cursor;
+        color: $contrast;
     }
 
     &__download-CV-icon{
-        color: white;
+        color: $contrast;
         position: absolute;
         left: 7.5rem;
         top: 0.6rem;
         height: 0.9rem;
         width: 0.9rem;
-        cursor: pointer;
+        cursor: $cursor;
     }
 
    
