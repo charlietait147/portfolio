@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins" as *;
 .project-content{
 
     &__header{
@@ -6,15 +7,7 @@
     }
 
     &__title{
-        background: #fff;
-        color: black;
-        display: inline-block;
-        font-weight: 600;
-        margin: 0;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        border-radius: 4px;
-
+       @include project-page-title;
         &--green{
             color: green;
             border: none;
@@ -82,13 +75,7 @@
     }
 
     &__section-title{
-        background: #fff;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-weight: 400;
-        display: inline-block;
-        margin: 0;
-        font-size: 1.5rem;
+        @include project-page-section-title;
     }
 
     &__tech-container{
@@ -130,9 +117,7 @@
     }
 
     &__text{
-        color: darkslategray;
-        font-size: 0.8rem;
-        line-height: 1.25rem;
+        @include project-page-paragraph;
         position: relative;
         // TABLET STYLING
         // padding-left: 1.75rem;
@@ -158,9 +143,7 @@
     }
 
     &__item-outline{
-        color: darkslategray;
-        font-size: 0.8rem;
-        line-height: 1.25rem;
+        @include project-page-paragraph;
         padding-bottom: 0.5rem;
     }
 

@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins" as *;
 .header{
     &__container{
         
@@ -17,8 +18,7 @@
     }
 
     &__image-container{
-        display: flex;
-        justify-content: center;
+        @include main-page-container;
         border-bottom: 2px solid black;
         background-color: gainsboro;
 

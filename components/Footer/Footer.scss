@@ -1,7 +1,7 @@
+@use "../../styles/partials/mixins" as *;
 .footer {
   &__headline-container {
-    display: flex;
-    justify-content: center;
+    @include main-page-container;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
   }
@@ -11,8 +11,7 @@
   }
 
   &__icon-container {
-    display: flex;
-    justify-content: center;
+    @include main-page-container;
     padding-top: 0.5rem;
     border-top: 1px solid;
     border-image: radial-gradient(
