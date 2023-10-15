@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__wrapper">
-        <p className="hero__welcome">Hi Everyone!</p>
+        <p className="hero__welcome">Hi Everyone! &#128075;</p> 
         <h1 className="hero__tagline">
           I'm Charlie{" "}
           <strong className="hero__tagline hero__tagline--bold">Tait</strong>
@@ -16,9 +16,9 @@ function Hero() {
         <p className="hero__description">
           I'm a{" "}
           <strong className="hero__description hero__description--bold">
-            full stack developer
+            full stack developer{" "}
           </strong>
-          , undergraduate of criminology and master's graduate of cybersecurity,
+          {/* undergraduate of criminology and master's graduate of cybersecurity, */}
           excited to write excellent quality code to increase performance and
           productivity.{" "}
         </p>

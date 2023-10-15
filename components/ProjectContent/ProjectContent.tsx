@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import "./ProjectContent.scss";
 import Image from "next/image";
 import homeEcoEarnerImg from "../../public/assets/images/HomeEcoEarner.png";
@@ -9,7 +9,7 @@ import adminLoginPage from "../../public/assets/images/AdminLoginPage.png";
 import adminDatabase from "../../public/assets/images/AdminDatabase.png";
 import CIcon from "@coreui/icons-react";
 import { cilMediaPlay, cibGithub } from "@coreui/icons";
-import Link from "next/link"
+import Link from "next/link";
 function ProjectContent() {
   return (
     <main className="project-content">
@@ -51,14 +51,32 @@ function ProjectContent() {
           </ul>
         </div>
         <ul className="project-content__links-list">
-            <div className="project-content__link-container">
-                <li className="project-content__item"><Link className="project-content__link" href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4">Demo</Link></li>
-                <Link href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4"><CIcon icon={cilMediaPlay} className="project-content__icon" /></Link>
-            </div>
-            <div className="project-content__link-container">
-                <li className="project-content__item"><Link className="project-content__link" href="https://github.com/charlietait147/HomeEcoEarner-client">GitHub</Link></li>
-                <Link href="https://github.com/charlietait147/HomeEcoEarner-client"><CIcon icon={cibGithub} className="project-content__icon" /></Link>
-            </div>
+          <div className="project-content__link-container">
+            <li className="project-content__item">
+              <Link
+                className="project-content__link"
+                href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4"
+              >
+                Demo
+              </Link>
+            </li>
+            <Link href="https://www.loom.com/share/bc62de47bc934b99a9aa7033c8365ae4">
+              <CIcon icon={cilMediaPlay} className="project-content__icon" />
+            </Link>
+          </div>
+          <div className="project-content__link-container">
+            <li className="project-content__item">
+              <Link
+                className="project-content__link"
+                href="https://github.com/charlietait147/HomeEcoEarner-client"
+              >
+                GitHub
+              </Link>
+            </li>
+            <Link href="https://github.com/charlietait147/HomeEcoEarner-client">
+              <CIcon icon={cibGithub} className="project-content__icon" />
+            </Link>
+          </div>
         </ul>
       </section>
       <section id="background" className="project-content__section">
@@ -72,9 +90,9 @@ function ProjectContent() {
             Build on the design of an already existing landing page.
           </li>
           <li className="project-content__item-outline">
-            Help integrate a database which would collect a users' users' name,
-            email and postcode as they sign up to join the waiting list in
-            advance of the company's launch.
+            Help integrate a database which would collect a users' name, email
+            and postcode as they sign up to join the waiting list in advance of
+            the company's launch.
           </li>
           <li className="project-content__item-outline">
             Add more pages such as a contact page which would contain a enquiry
@@ -82,8 +100,9 @@ function ProjectContent() {
             company could write up.{" "}
           </li>
           <li className="project-content__item-outline">
-            Present a way of visually seeing users in a database that have
-            joined the waiting list, through the use of an admin page.
+            Present a way for an administrator to view all user details in a
+            database provided on joining the waiting list, through the use of an
+            admin page.
           </li>
         </ol>
       </section>
@@ -145,8 +164,7 @@ function ProjectContent() {
           <br />
           Being new to this task, I carried out some research and determined
           that a filter function was the most suitable solution. This function
-          would filter results based on the user's input. To provide the
-          effective searching, I stored the list in the application's state and
+          would filter results based on the user's input. To enable this search, I stored the list in the application's state and
           targetted properties containing matching letters. I also learned to
           manage the reset functionality by establishing an additional state
           that reverts to the full list when the input is empty, ensuring a
