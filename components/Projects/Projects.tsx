@@ -6,7 +6,7 @@ import Link from "next/link"
 
 function Projects() {
   return (
-    <section className="projects">
+    <section id="projects">
       <div className="projects__title-container">
         <h3 className="projects__title">Projects</h3>
       </div>

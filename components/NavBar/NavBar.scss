@@ -1,24 +1,31 @@
 @use "../../styles/partials/variables" as *;
-.nav{
-    background-color: $secondary-background;
-  
-    
-    &__wrapper{
-        padding: 1rem;
-        display: flex;
-        padding-left: 2rem;
-        border-bottom: 1px solid white;
-    }
+.nav {
+  background-color: $secondary-background;
 
+  &__wrapper {
+    display: flex;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+  }
 
-    &__logo{
-        height: 3rem;
-        width: 3rem;
-    }
+  &__logo {
+    height: 3rem;
+    width: 3rem;
+  }
 
-    &__logo,
-    &__contact{
-        color: $contrast;
-        margin: 0;
-    }
+  &__list {
+    display: flex;
+    padding: 0;
+  }
+
+  &__item {
+    color: $tertiary-text;
+    font-size: 0.8rem;
+    padding: 0rem 0.5rem;
+  }
+
+  &__item:hover{
+    color: $contrast;
+  }
 }
