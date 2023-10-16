@@ -40,11 +40,21 @@
     cursor: $cursor;
   }
 
+  &__email-container{
+    display: flex;
+    justify-content: center;
+  }
+
   &__email {
-    text-align: $text-align;
     font-size: 0.8rem;
     margin: 0;
     padding-top: 0.5rem;
+    text-decoration: underline;
+    color: black;
+  }
+
+  &__email:hover{
+    color: blue;
   }
 
   &__copyright-container {

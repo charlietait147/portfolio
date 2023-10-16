@@ -20,7 +20,9 @@ function Footer() {
           <Link href="https://www.linkedin.com/in/charlie-tait/"><CIcon icon={cibLinkedin} className="footer__icon" /></Link>
         </div>
       </div>
-      <p className="footer__email">charlietait1@gmail.com</p>
+      <div className="footer__email-container">
+          <a href= "mailto:charlietait1@gmail.com" className="footer__email">charlietait1@gmail.com</a>
+      </div>
       <div className="footer__copyright-container">
         <small className="footer__copyright">
           Created by{" "}
