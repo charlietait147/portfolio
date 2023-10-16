@@ -6,7 +6,7 @@ import {cibNextJs, cibSassAlt, cibReact, cibPostman, cibMysql, cibGit, cibHtml5,
 
 function Skills() {
     return ( 
-        <section id="skills">
+        <section id="skills" className="skills">
             <div className="skills__title-container">
                 <h3 className="skills__title">Skills</h3>
             </div>

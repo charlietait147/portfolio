@@ -2,14 +2,18 @@
 @use "../../styles/partials/variables" as *;
 .header {
   &__container {
+    @include laptop {
+      background: linear-gradient(to left, gainsboro 50%, #000 50%);
+    }
+  }
+
+  &__wrapper {
     @include tablet {
       display: flex;
     }
-
-    //LAPTOP STYLING
-
-    // max-width: 1020px;
-    // margin: auto;
+    @include laptop {
+      @include max-width;
+    }
   }
 
   &__text-container {
@@ -26,14 +30,17 @@
     @include tablet {
       flex-basis: 50%;
     }
+    @include laptop{
+      border: none;
+    }
   }
 
   &__image {
     width: 50%;
     height: 100%;
     opacity: 0.75;
-    @include tablet{
-        width: 75%;
+    @include tablet {
+      width: 75%;
     }
   }
 }

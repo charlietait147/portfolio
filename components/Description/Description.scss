@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins" as *;
+.description {
+  &__container {
+    @include laptop {
+      display: flex;
+      @include max-width;
+    }
+  }
+}

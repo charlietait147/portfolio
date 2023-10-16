@@ -15,12 +15,14 @@
         @include tablet{
             padding: 1rem 3rem 0;
         }
+        @include laptop{
+            @include max-width;
+        }
     }
 
     &__project-container{
         @include tablet{
         display: flex;
-        border: $primary-border;
         }
     }
 
