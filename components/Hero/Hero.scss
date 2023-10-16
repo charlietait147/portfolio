@@ -1,7 +1,11 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 .hero{
     &__wrapper{
         padding: 1rem $mobile-padding 0.5rem;
+        @include tablet{
+            padding: 3rem;
+        }
     }
 
     

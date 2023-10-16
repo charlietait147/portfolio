@@ -12,6 +12,22 @@
 
     &__projects-container{
         padding: 1rem 1rem 0;
+        @include tablet{
+            padding: 1rem 3rem 0;
+        }
+    }
+
+    &__project-container{
+        @include tablet{
+        display: flex;
+        border: $primary-border;
+        }
+    }
+
+    &__image-container{
+        @include tablet{
+        flex-basis: 50%;
+        }
     }
 
     &__home-eco{
@@ -19,10 +35,24 @@
         height: auto;
     }
 
+    &__description-container{
+        @include tablet{
+        flex-basis: 50%;
+        border-left: $primary-border;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+    }
+
     &__text-container{
         border-top: $primary-border;
         padding: 1rem 0rem;
         background-color: $project-background;
+        @include tablet{
+            border-top: none;
+        }
     }
 
     &__text-title{
@@ -46,6 +76,12 @@
         padding: 1rem;
         display: flex;
         justify-content: space-evenly;
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0.5rem;
+        }
     }
 
     &__button{
@@ -56,6 +92,11 @@
         color: black;
         font-size: 0.7rem;
         text-decoration: none;
+        @include tablet{
+            width: 50%;
+            text-align: center;
+            margin: 0.5rem;
+        }
 
         &:hover{
             background-color: $secondary-background;

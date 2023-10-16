@@ -47,7 +47,9 @@ function ProjectContent() {
             <li className="project-content__tech-item">Auth</li>
             <li className="project-content__tech-item">MySQL</li>
             <li className="project-content__tech-item">CoreUI</li>
+            <li className="project-content__tech-item">MUI Icons</li>
             <li className="project-content__tech-item">API</li>
+            
           </ul>
         </div>
         <ul className="project-content__links-list">

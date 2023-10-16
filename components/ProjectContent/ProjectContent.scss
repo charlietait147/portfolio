@@ -6,6 +6,9 @@
     &__header{
         padding: 1rem 2rem;
         background: $tertiary-background;
+        @include tablet{
+            padding: 1rem 3rem;
+        }
     }
 
     &__title{
@@ -74,10 +77,14 @@
 
     &__section{
         padding: $mobile-padding $mobile-padding 0rem;
+        @include tablet{
+            padding: 2rem 3rem 0rem;
+        }
     }
 
     &__section-title{
         @include project-page-section-title;
+       
     }
 
     &__tech-container{
@@ -86,6 +93,9 @@
         margin-top: 1rem;
         background-color: #D0E7D2;
         display: inline-block;
+        @include tablet{
+            display: block;
+        }
        
     }
 
@@ -98,6 +108,9 @@
         row-gap: 0.5rem;
         margin: 0;
         list-style-type: none;
+        @include tablet{
+            justify-content: space-around;
+        }
     }
 
     &__tech-item{
@@ -158,11 +171,16 @@
         height: auto;
         width: 100%;
         padding: 1rem;
+        @include tablet{
+            max-width: 40rem;
+            margin: auto;
+        }
     }
 
     &__subtitle{
         color: $primary-text;
         font-weight: 600;
+        margin-bottom: 0;
     }
 
 

@@ -1,40 +1,39 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
-.header{
-    // &__container{
-    
-       
-    //     //TABLET STYLING
-    //     // display: flex;
-    //     // max-width: 1020px;
-    //     // margin: auto;
-    // }
-
-    &__text-container{
-        
-        background-color: $secondary-background;
-        //TABLET STYLING
-        // width: 50%;
+.header {
+  &__container {
+    @include tablet {
+      display: flex;
     }
 
-    &__image-container{
-        @include main-page-container;
-        border-bottom: 2px solid black;
-        background-color: $image-background;
+    //LAPTOP STYLING
 
-        //TABLET STYLING
-        // width: 50%;
-        
+    // max-width: 1020px;
+    // margin: auto;
+  }
+
+  &__text-container {
+    background-color: $secondary-background;
+    @include tablet {
+      flex-basis: 50%;
     }
+  }
 
-    &__image{
-        width: 50%;
-        height: 100%;
-        opacity: 0.75;
-
-        // TABLET STYLING
-        // width: 100%;
-        // height: 100%;
-        // opacity: 0.75;
+  &__image-container {
+    @include main-page-container;
+    border-bottom: 2px solid black;
+    background-color: $image-background;
+    @include tablet {
+      flex-basis: 50%;
     }
+  }
+
+  &__image {
+    width: 50%;
+    height: 100%;
+    opacity: 0.75;
+    @include tablet{
+        width: 75%;
+    }
+  }
 }

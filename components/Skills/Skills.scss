@@ -18,6 +18,10 @@
         border-radius: $border-radius;
         margin: 1rem 0.5rem;
         box-shadow: $box-shadow;
+        @include tablet{
+            column-gap: 2rem;
+            margin: 1rem 3rem;
+        }
     }
 
     &__icon{
