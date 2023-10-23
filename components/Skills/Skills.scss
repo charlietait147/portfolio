@@ -26,6 +26,9 @@
             column-gap: 2rem;
             margin: 1rem 3rem;
         }
+        @include laptop{
+            margin-top: 1.5rem;
+        }
     }
 
     &__icon{

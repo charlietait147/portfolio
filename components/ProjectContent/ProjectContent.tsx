@@ -14,25 +14,27 @@ function ProjectContent() {
   return (
     <main className="project-content">
       <header className="project-content__header">
-        <div className="project-content__title-container">
-          <h1 className="project-content__title">
-            Home{" "}
-            <strong className="project-content__title project-content__title--green">
-              EcoEarner
-            </strong>
-          </h1>
-        </div>
-        <p className="project-content__tagline">
-          {" "}
-          A development landing page and website of a start-up renewable energy
-          company.
-        </p>
-        <div className="project-content__main-image-container">
-          <Image
-            src={homeEcoEarnerImg}
-            alt="home eco earner snippet"
-            className="project-content__main-image"
-          />
+        <div className="project-content__header-wrapper">
+          <div className="project-content__title-container">
+            <h1 className="project-content__title">
+              Home{" "}
+              <strong className="project-content__title project-content__title--green">
+                EcoEarner
+              </strong>
+            </h1>
+          </div>
+          <p className="project-content__tagline">
+            {" "}
+            A development landing page and website of a start-up renewable
+            energy company.
+          </p>
+          <div className="project-content__main-image-container">
+            <Image
+              src={homeEcoEarnerImg}
+              alt="home eco earner snippet"
+              className="project-content__main-image"
+            />
+          </div>
         </div>
       </header>
       <section id="tech-stack" className="project-content__section">
@@ -49,7 +51,6 @@ function ProjectContent() {
             <li className="project-content__tech-item">CoreUI</li>
             <li className="project-content__tech-item">MUI Icons</li>
             <li className="project-content__tech-item">API</li>
-            
           </ul>
         </div>
         <ul className="project-content__links-list">
@@ -141,37 +142,46 @@ function ProjectContent() {
       <section id="challenges" className="project-content__section">
         <h2 className="project-content__section-title">Challenges</h2>
         <h4 className="project-content__subtitle">Admin Authorisation</h4>
-        <p className="project-content__text">
-          It was tough to find the right way to ensure one admin user could log
-          in to an admin database. But I found that I could store a username and
-          password in an env file on the backend server and send this down to
-          the client. When the admin enters the correct password, this would
-          take them to the database. <br />
+        <ul className="project-content__section-list">
+          <li className="project-content__text">
+            It was tough to find the right way to ensure one admin user could
+            log in to an admin database. But I found that I could store a
+            username and password in an env file on the backend server and send
+            this down to the client. When the admin enters the correct password,
+            this would take them to the database.
+          </li>
           <br />
-          However, this wasn't a good user experience, as they would be logged
-          out if they were to accidentally refresh the page. I ended up using a
-          JWT token in local storage, which would give an admin the token when
-          they entered the correct username and password. This means that a
-          refresh wouldnt log them out of the page. I further added a log out
-          button so they could securely log out, which in turn removes the token
-          from local storage.
-        </p>
+          <li className="project-content__text">
+            However, this wasn't a good user experience, as they would be logged
+            out if they were to accidentally refresh the page. I ended up using
+            a JWT token in local storage, which would give an admin the token
+            when they entered the correct username and password. This means that
+            a refresh wouldnt log them out of the page. I further added a log
+            out button so they could securely log out, which in turn removes the
+            token from local storage.
+          </li>
+        </ul>
         <h4 className="project-content__subtitle">Dynamic Filtering</h4>
-        <p className="project-content__text">
-          In both the news page and the admin database, I wanted to ensure
-          effortless searching for news articles or user profiles. Users and
-          administrators can initiate a search by typing in a search bar, with
-          results displayed in real-time. When the search input is cleared, the
-          list should revert to the full set of users or news articles. <br />
+        <ul className="project-content__section-list">
+          <li className="project-content__text">
+            In both the news page and the admin database, I wanted to ensure
+            effortless searching for news articles or user profiles. Users and
+            administrators can initiate a search by typing in a search bar, with
+            results displayed in real-time. When the search input is cleared,
+            the list should revert to the full set of users or news articles.
+          </li>
           <br />
-          Being new to this task, I carried out some research and determined
-          that a filter function was the most suitable solution. This function
-          would filter results based on the user's input. To enable this search, I stored the list in the application's state and
-          targetted properties containing matching letters. I also learned to
-          manage the reset functionality by establishing an additional state
-          that reverts to the full list when the input is empty, ensuring a
-          smooth experience for resetting search results.
-        </p>
+          <li className="project-content__text">
+            Being new to this task, I carried out some research and determined
+            that a filter function was the most suitable solution. This function
+            would filter results based on the user's input. To enable this
+            search, I stored the list in the application's state and targetted
+            properties containing matching letters. I also learned to manage the
+            reset functionality by establishing an additional state that reverts
+            to the full list when the input is empty, ensuring a smooth
+            experience for resetting search results.
+          </li>
+        </ul>
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 import Hero from "../Hero/Hero";
 import NavBar from "../NavBar/NavBar";
 import "./Header.scss";
-import portfolioImage from "../../public/assets/images/portfolio-edited-image.png";
+import portfolioImage from "../../public/assets/images/Charlie_Tait_edited.png";
 import Image from "next/image";
 
 function Header() {
