@@ -8,7 +8,9 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__wrapper">
-        <p className="hero__welcome">Hi Everyone! &#128075;</p> 
+        <div className="hero__welcome-container">
+          <p className="hero__welcome">Hi Everyone! &#128075;</p>
+        </div>
         <h1 className="hero__tagline">
           I'm Charlie{" "}
           <strong className="hero__tagline hero__tagline--bold">Tait</strong>
