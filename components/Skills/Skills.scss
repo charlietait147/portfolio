@@ -36,4 +36,19 @@
         width: 4rem;
         margin: 1rem;
     }
+    
+    &__icon:hover{
+        animation: rotate 3s;
+
+        @keyframes rotate{
+            from  {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
 }
