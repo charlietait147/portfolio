@@ -14,7 +14,7 @@ function Projects() {
           <div className="projects__image-container">
             <Link href="/projects/home-ecoearner">
               <Image
-                className="projects__home-eco"
+                className="projects__snippet"
                 src={homeEcoEarnerImg}
                 alt="HomeEcoEarner project snippet"
               />

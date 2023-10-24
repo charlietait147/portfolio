@@ -32,15 +32,32 @@
         }
     }
 
-    &__home-eco{
+    &__snippet{
         max-width: 100%;
         height: auto;
+        @include tablet{
+            border-right: $secondary-border;
+        }
+        
+    }
+
+    &__snippet:hover{
+        animation: zoom 0.3s ease-in forwards;
+
+        @keyframes zoom{
+            0% {
+                transform: scale(1)
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
     }
 
     &__description-container{
         @include tablet{
         flex-basis: 50%;
-        border-left: $primary-border;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
