@@ -10,7 +10,9 @@ import adminDatabase from "../../public/assets/images/AdminDatabase.png";
 import CIcon from "@coreui/icons-react";
 import { cilMediaPlay, cibGithub } from "@coreui/icons";
 import Link from "next/link";
+import { motion, useScroll } from "framer-motion";
 function ProjectContent() {
+  const { scrollYProgress } = useScroll();
   return (
     <main className="project-content">
       <header className="project-content__header">
@@ -111,33 +113,34 @@ function ProjectContent() {
       </section>
       <section id="screenshots" className="project-content__section">
         <h2 className="project-content__section-title">Screenshots</h2>
-        <div className="project-content__screenshot-container">
-          <Image
-            src={waitingListForm}
-            alt="screenshot of waiting list form modal"
-            className="project-content__screenshot"
-          />
-          <Image
-            src={newsPage}
-            alt="screenshot of news page"
-            className="project-content__screenshot"
-          />
-          <Image
-            src={contactPage}
-            alt="screenshot of contact page"
-            className="project-content__screenshot"
-          />
-          <Image
-            src={adminLoginPage}
-            alt="screenshot of admin login page"
-            className="project-content__screenshot"
-          />
-          <Image
-            src={adminDatabase}
-            alt="screenshot of admin database"
-            className="project-content__screenshot"
-          />
-        </div>
+        <motion.div style={{ scaleX: scrollYProgress }} />
+          <div className="project-content__screenshot-container">
+            <Image
+              src={waitingListForm}
+              alt="screenshot of waiting list form modal"
+              className="project-content__screenshot"
+            />
+            <Image
+              src={newsPage}
+              alt="screenshot of news page"
+              className="project-content__screenshot"
+            />
+            <Image
+              src={contactPage}
+              alt="screenshot of contact page"
+              className="project-content__screenshot"
+            />
+            <Image
+              src={adminLoginPage}
+              alt="screenshot of admin login page"
+              className="project-content__screenshot"
+            />
+            <Image
+              src={adminDatabase}
+              alt="screenshot of admin database"
+              className="project-content__screenshot"
+            />
+          </div>
       </section>
       <section id="challenges" className="project-content__section">
         <h2 className="project-content__section-title">Challenges</h2>
