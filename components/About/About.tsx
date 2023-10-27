@@ -7,7 +7,7 @@ function About() {
       </div>
       <p className="about__description">
         {/* Coming from an educational background in criminology and cyber-security, */}
-        As an undergraduate in criminology with a master's degree in cybersecurity,
+        As an undergraduate in criminology with a master&#39;s degree in cybersecurity,
         I have acquired a strong knowledge base in computing and a talent for
         problem solving. I also have a passion for technology as a whole, with a
         particular interest in security technology and cyber-crime. I am excited

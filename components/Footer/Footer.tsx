@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__headline-container">
-        <span className="footer__headline">Let's Connect</span>
+        <span className="footer__headline">Let&#39;s Connect</span>
       </div>
       <div className="footer__icon-container">
         <div className="footer__icon-background">

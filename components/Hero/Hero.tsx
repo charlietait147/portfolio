@@ -12,11 +12,11 @@ function Hero() {
           <p className="hero__welcome">Hi Everyone! &#128075;</p>
         </div>
         <h1 className="hero__tagline">
-          I'm Charlie{" "}
+          I&#39;m Charlie{" "}
           <strong className="hero__tagline hero__tagline--bold">Tait</strong>
         </h1>
         <p className="hero__description">
-          I'm a{" "}
+          I&#39;m a{" "}
           <strong className="hero__description hero__description--bold">
             full stack developer{" "}
           </strong>

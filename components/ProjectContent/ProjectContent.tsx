@@ -95,9 +95,9 @@ function ProjectContent() {
             Build on the design of an already existing landing page.
           </li>
           <li className="project-content__item-outline">
-            Help integrate a database which would collect a users' name, email
+            Help integrate a database which would collect a users&#39; name, email
             and postcode as they sign up to join the waiting list in advance of
-            the company's launch.
+            the company&#39;s launch.
           </li>
           <li className="project-content__item-outline">
             Add more pages such as a contact page which would contain a enquiry
@@ -113,7 +113,6 @@ function ProjectContent() {
       </section>
       <section id="screenshots" className="project-content__section">
         <h2 className="project-content__section-title">Screenshots</h2>
-        <motion.div style={{ scaleX: scrollYProgress }} />
           <div className="project-content__screenshot-container">
             <Image
               src={waitingListForm}
@@ -155,7 +154,7 @@ function ProjectContent() {
           </li>
           <br />
           <li className="project-content__text">
-            However, this wasn't a good user experience, as they would be logged
+            However, this wasn&#39;t a good user experience, as they would be logged
             out if they were to accidentally refresh the page. I ended up using
             a JWT token in local storage, which would give an admin the token
             when they entered the correct username and password. This means that
@@ -177,8 +176,8 @@ function ProjectContent() {
           <li className="project-content__text">
             Being new to this task, I carried out some research and determined
             that a filter function was the most suitable solution. This function
-            would filter results based on the user's input. To enable this
-            search, I stored the list in the application's state and targetted
+            would filter results based on the user&#39;s input. To enable this
+            search, I stored the list in the application&#39;s state and targetted
             properties containing matching letters. I also learned to manage the
             reset functionality by establishing an additional state that reverts
             to the full list when the input is empty, ensuring a smooth
