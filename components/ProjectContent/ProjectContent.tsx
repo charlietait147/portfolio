@@ -87,7 +87,7 @@ function ProjectContent() {
       <section id="background" className="project-content__section">
         <h2 className="project-content__section-title">Background</h2>
         <p className="project-content__text">
-          My Dad will be launching a renewable energy start-up company in the
+          My father will be launching a renewable energy start-up company in the
           last quarter of 2023. I saw the opportunity to:
         </p>
         <ol className="project-content__list-outline">

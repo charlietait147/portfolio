@@ -11,7 +11,7 @@ function About() {
         I have acquired a strong knowledge base in computing and a talent for
         problem solving. I also have a passion for technology as a whole, with a
         particular interest in security technology and cyber-crime. I am excited
-        to have the opportunity to take my skills into software engineering.
+        to be given the opportunity to take my skills into software engineering.
       </p>
     </section>
   );
