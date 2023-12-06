@@ -21,6 +21,7 @@
     }
 
     &__project-container{
+        margin-bottom: 2rem;
         @include tablet{
         display: flex;
         }
@@ -79,8 +80,11 @@
         font-weight: 500;
         font-size: 0.9rem;
         text-align: $text-align;
-        &--green{
+        &--fill-green{
             color: $highlighted-text;
+        }
+        &--fill-red{
+            color: #c24d2c
         }
     }
 
@@ -133,6 +137,16 @@
                 background-color: $primary-background;
                 color: darkgreen;
                 cursor: $cursor;
+            }
+        }
+
+        &--live{
+            background-color: #c24d2c;
+            color: white;
+
+            &:hover{
+                background-color: $primary-background;
+                color: #c24d2c;
             }
         }
     }
