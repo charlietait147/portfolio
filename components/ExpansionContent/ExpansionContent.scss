@@ -4,7 +4,7 @@
 .expansion-content{
 
     &__header{
-        background: #c24d2c;
+        background: $project-secondary
     }
 
     &__header-wrapper{
@@ -151,15 +151,13 @@
     &__tech-item{
         position: relative;
         padding-left: 1rem;
-        // color: $primary-text;
-        color:#c24d2c;
+        color:$project-secondary;
 
         &::after{
             content: '';
             height: 0.4em;
             width: 0.4em;
-            // background: $tertiary-background;
-            background: #c24d2c;
+            background: $project-secondary;
             display: block;
             position: absolute;
             transform: rotate(45deg);
@@ -174,21 +172,11 @@
     &__text{
         @include project-page-paragraph;
         position: relative;
-        // TABLET STYLING
-        // padding-left: 1.75rem;
+       
 
         &::after{
         display: none;
-        // TABLET STYLING
-        // content: " ";
-        // background: darkgreen;
-        // display: block;
-        // height: 1rem;
-        // width: 0.1rem;
-        // position: absolute;
-        // transform: rotate(90deg);
-        // left: 0.75rem;
-        // top: 0.1rem;
+       
             
         }
     }
@@ -197,5 +185,10 @@
         color: $primary-text;
         font-weight: 600;
         margin-bottom: 0;
+    }
+
+    &__section-list{
+        list-style-type: disc;
+        padding: 0rem 1rem;
     }
 }
