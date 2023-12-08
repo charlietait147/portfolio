@@ -49,7 +49,7 @@ function Projects() {
         </div>
         <div className="projects__project-container">
           <div className="projects__image-container">
-            <Link href="/projects/home-ecoearner">
+            <Link href="/projects/expansion">
               <Image
                 className="projects__snippet"
                 src={expansionImg}
@@ -61,7 +61,7 @@ function Projects() {
             <div className="projects__text-container">
               <h4 className="projects__text-title projects__text-title--fill-red">expansion</h4>
               <p className="projects__text-description">
-                A thesaurus powered by Thesaurus API.
+              A thesaurus app powered by Thesaurus API. It fetches a list of 12 synonyms for words with colour co-ordinations.
               </p>
             </div>
             <div className="projects__button-container">
@@ -71,7 +71,7 @@ function Projects() {
                 >
                   SEE LIVE
                 </a>
-                <a href="/projects/home-ecoearner" className="projects__button">
+                <a href="/projects/expansion" className="projects__button">
                   MORE DETAILS
                 </a>
             </div>

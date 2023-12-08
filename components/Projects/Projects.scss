@@ -68,7 +68,7 @@
 
     &__text-container{
         border-top: $primary-border;
-        padding: 1rem 0rem;
+        padding: 1rem;
         background-color: $project-background;
         @include tablet{
             border-top: none;
@@ -84,7 +84,7 @@
             color: $highlighted-text;
         }
         &--fill-red{
-            color: #c24d2c
+            color: $project-secondary;
         }
     }
 
@@ -129,7 +129,7 @@
 
         &--demo{
             border: 1px solid darkgreen;
-            background-color: $tertiary-background;
+            background-color: $project-primary;
             color: white;
             text-decoration: none;
 
@@ -141,12 +141,12 @@
         }
 
         &--live{
-            background-color: #c24d2c;
+            background-color: $project-secondary;
             color: white;
 
             &:hover{
                 background-color: $primary-background;
-                color: #c24d2c;
+                color: $project-secondary;
             }
         }
     }

@@ -1,10 +1,10 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.project-content{
+.expansion-content{
 
     &__header{
-        background: $project-primary;
+        background: #c24d2c;
     }
 
     &__header-wrapper{
@@ -120,7 +120,9 @@
         border: $secondary-border;
         padding: 0.5rem;
         margin-top: 1rem;
-        background-color: #D0E7D2;
+        // background-color: #D0E7D2;
+        background-color: #fdd4d4;
+        // background-color: #c24d2c;
         display: inline-block;
         @include tablet{
             display: block;
@@ -149,13 +151,15 @@
     &__tech-item{
         position: relative;
         padding-left: 1rem;
-        color: $primary-text;
+        // color: $primary-text;
+        color:#c24d2c;
 
         &::after{
             content: '';
             height: 0.4em;
             width: 0.4em;
-            background: $project-primary;
+            // background: $tertiary-background;
+            background: #c24d2c;
             display: block;
             position: absolute;
             transform: rotate(45deg);
@@ -189,86 +193,9 @@
         }
     }
 
-    &__list-outline{
-        margin-bottom: 0;
-    }
-
-    &__item-outline{
-        @include project-page-paragraph;
-        padding-bottom: 0.5rem;
-        opacity: 0;
-        animation: appear 1s ease both;
-
-    &:nth-child(1){
-        animation-delay: 2s;
-    }
-
-    &:nth-child(2){
-        animation-delay: 3.5s;
-    }
-
-    &:nth-child(3){
-        animation-delay: 5s;
-    }
-
-    &:nth-child(4){
-        animation-delay: 6.5s;
-    }
-
-        @keyframes appear{
-            0%{
-                opacity: 0;
-            }
-            
-            100%{
-                opacity: 1;
-            }
-        }
-    }
-
-    &__screenshot-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__screenshot{
-        height: auto;
-        width: 100%;
-        padding: 1rem;
-        animation: slideRight 5s ease-in-out;
-        @include tablet{
-            max-width: 40rem;
-            margin: auto;
-        }
-
-        @keyframes slideRight{
-            0%{
-                transform: translateX(-100%);
-            }
-            100%{
-                transform: translateX(0);
-            }
-        }
-    }
-
     &__subtitle{
         color: $primary-text;
         font-weight: 600;
         margin-bottom: 0;
     }
-
-    &__section-list{
-        list-style-type: disc;
-        padding: 0rem 1rem;
-    }
-
-
-
-
-
-    
-
-
-
-
 }
