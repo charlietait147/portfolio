@@ -57,7 +57,7 @@ function ExpansionContent() {
             <li className="expansion-content__item">
               <Link
                 className="expansion-content__link"
-                href="https://github.com/charlietait147/HomeEcoEarner-client"
+                href="https://github.com/charlietait147/expansion"
               >
                 GitHub
               </Link>
