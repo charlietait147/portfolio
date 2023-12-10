@@ -97,8 +97,8 @@ function ExpansionContent() {
           <br />
           <li className="expansion-content__text">
             I also ensured that I specifically defined the search bar submit
-            event, by importing React's form event. To handle the onChange
-            event, I imported React's Change Event.
+            event, by importing React&#39;s form event. To handle the onChange
+            event, I imported React&#39;s Change Event.
           </li>
         </ul>
         <h4 className="expansion-content__subtitle">
