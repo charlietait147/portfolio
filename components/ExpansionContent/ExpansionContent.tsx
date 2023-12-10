@@ -33,7 +33,7 @@ function ExpansionContent() {
           <ul className="expansion-content__tech-list">
             <li className="expansion-content__tech-item">Next.js</li>
             <li className="expansion-content__tech-item">Typescript</li>
-            <li className="expansion-content__tech-item">Tailwind</li>
+            <li className="expansion-content__tech-item">Tailwind CSS</li>
             <li className="expansion-content__tech-item">Heroicons</li>
             <li className="expansion-content__tech-item">Axios</li>
             <li className="expansion-content__tech-item">API</li>
@@ -72,7 +72,7 @@ function ExpansionContent() {
         <h2 className="expansion-content__section-title">Background</h2>
         <p className="expansion-content__text">
           I wanted to challenge myself by using both Typescript to fetch data
-          from an API and Tailwind CSS to design a nice user interface. I
+          from an API and Tailwind CSS to design an attractive user interface. I
           decided to create a new Thesaurus app, using the Thesaurus API from
           API Ninjas.
         </p>
@@ -84,15 +84,15 @@ function ExpansionContent() {
         </h4>
         <ul className="expansion-content__section-list">
           <li className="expansion-content__text">
-            Being used to working with plain JavaScript, I had to research the
-            structure of API requests with Typescript, after receiving
-            declaration errors. After research, I declared an interface with two
-            of the values I wanted to fetch, the word and a synonyms array. I
-            defined their type in the interface before putting the interface
-            into state, so I could access it to display content on the page. I
-            ensured that this could also be null, given that there would be no
-            data before the API request had been made. I further explicity
-            attached the interface to the get request.
+            Accustomed to working with plain JavaScript, I had to delve into the
+            structure of API requests with TypeScript due to encountering
+            declaration errors. Following my research, I created an interface
+            specifying the structure of the data I intended to fetch, including
+            the word and an array of synonyms.I defined their types within the
+            interface and put the interface into the state, allowing me to
+            access it for displaying content on the page. I also ensured that this could be null, considering that there would be no
+            data available before the API request. Additionally, I explicitly
+            associated the interface with the GET request.
           </li>
           <br />
           <li className="expansion-content__text">
@@ -106,11 +106,12 @@ function ExpansionContent() {
         </h4>
         <ul className="expansion-content__section-list">
           <li className="expansion-content__text">
-            I had struggled with finding the right function, in my believing
-            that the trim function removed all characters and whitespace, to
-            finding that it only removed whitespace. After some research, I
-            found the replace function was suitable, in replacing lowercase and
-            uppercase characters and whitespace with an empty string.
+            I encountered difficulties initially, thinking that the trim
+            function would eliminate all characters and whitespace, only to
+            discover that it exclusively removes whitespace. Following some
+            research, I determined that the replace function was more suitable
+            for replacing both lowercase and uppercase characters, along with
+            whitespace, using an empty string.
           </li>
         </ul>
       </section>
