@@ -2,6 +2,7 @@ import "./Projects.scss";
 import Image from "next/image";
 import homeEcoEarnerImg from "../../public/assets/images/HomeEcoEarner.png";
 import expansionImg from "../../public/assets/images/expansion-edited.png";
+import weatherAppImg from "../../public/assets/images/weather-app-screenshot.png";
 import Link from "next/link";
 
 function Projects() {
@@ -59,21 +60,52 @@ function Projects() {
           </div>
           <div className="projects__description-container">
             <div className="projects__text-container">
-              <h4 className="projects__text-title projects__text-title--fill-red">expansion</h4>
+              <h4 className="projects__text-title projects__text-title--fill-red">
+                expansion
+              </h4>
               <p className="projects__text-description">
-              A thesaurus app powered by Thesaurus API. It fetches a list of 12 synonyms for words with colour co-ordinations.
+                A thesaurus app powered by Thesaurus API. It fetches a list of
+                12 synonyms for words with colour co-ordinations.
               </p>
             </div>
             <div className="projects__button-container">
-                <a
-                  href="https://expansion-zeta.vercel.app"
-                  className="projects__button projects__button--live"
-                >
-                  SEE LIVE
-                </a>
-                <a href="/projects/expansion" className="projects__button">
-                  MORE DETAILS
-                </a>
+              <a
+                href="https://expansion-zeta.vercel.app"
+                className="projects__button projects__button--live-red"
+              >
+                SEE LIVE
+              </a>
+              <a href="/projects/expansion" className="projects__button">
+                MORE DETAILS
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="projects__project-container">
+          <div className="projects__image-container">
+            <Image
+              className="projects__snippet"
+              src={weatherAppImg}
+              alt="weather app project snippet"
+            />
+          </div>
+          <div className="projects__description-container">
+            <div className="projects__text-container">
+              <h4 className="projects__text-title projects__text-title--fill-blue">DFCorp Weather App</h4>
+              <p className="projects__text-description">
+                A weather app that fetches weather data from OpenWeather API.
+              </p>
+            </div>
+            <div className="projects__button-container">
+              <a
+                href="https://expansion-zeta.vercel.app"
+                className="projects__button projects__button--live-blue"
+              >
+                SEE LIVE
+              </a>
+              <a href="/projects/expansion" className="projects__button">
+                MORE DETAILS
+              </a>
             </div>
           </div>
         </div>
