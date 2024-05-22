@@ -83,11 +83,13 @@ function Projects() {
         </div>
         <div className="projects__project-container">
           <div className="projects__image-container">
+            <Link href="/projects/dfcorp-weather-app">
             <Image
               className="projects__snippet"
               src={weatherAppImg}
               alt="weather app project snippet"
             />
+            </Link>
           </div>
           <div className="projects__description-container">
             <div className="projects__text-container">
@@ -97,13 +99,13 @@ function Projects() {
               </p>
             </div>
             <div className="projects__button-container">
-              <a
+              {/* <a
                 href="https://expansion-zeta.vercel.app"
                 className="projects__button projects__button--live-blue"
               >
                 SEE LIVE
-              </a>
-              <a href="/projects/expansion" className="projects__button">
+              </a> */}
+              <a href="/projects/dfcorp-weather-app" className="projects__button">
                 MORE DETAILS
               </a>
             </div>
