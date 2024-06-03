@@ -63,6 +63,10 @@
         flex-direction: column;
         justify-content: space-between;
         }
+        &--flex-start{
+            justify-content: flex-start;
+        
+        }
 
     }
 
@@ -86,6 +90,9 @@
         &--fill-red{
             color: $project-secondary;
         }
+        &--fill-blue{
+            color: #0d6efd;
+        }
     }
 
     &__text-description{
@@ -104,6 +111,9 @@
             flex-direction: column;
             align-items: center;
             padding-top: 0.5rem;
+        }
+        &--padding-top{
+            padding-top: 2rem;
         }
     }
 
@@ -140,13 +150,23 @@
             }
         }
 
-        &--live{
+        &--live-red{
             background-color: $project-secondary;
             color: white;
 
             &:hover{
                 background-color: $primary-background;
                 color: $project-secondary;
+            }
+        }
+
+        &--live-blue{
+            background-color: #0d6efd;
+            color: white;
+
+            &:hover{
+                background-color: $primary-background;
+                color: #0d6efd;
             }
         }
     }
