@@ -91,20 +91,14 @@ function Projects() {
             />
             </Link>
           </div>
-          <div className="projects__description-container">
+          <div className="projects__description-container projects__description-container--flex-start">
             <div className="projects__text-container">
               <h4 className="projects__text-title projects__text-title--fill-blue">DFCorp Weather App</h4>
               <p className="projects__text-description">
                 A weather app that fetches weather data from OpenWeather API.
               </p>
             </div>
-            <div className="projects__button-container">
-              {/* <a
-                href="https://expansion-zeta.vercel.app"
-                className="projects__button projects__button--live-blue"
-              >
-                SEE LIVE
-              </a> */}
+            <div className="projects__button-container projects__button-container--padding-top">
               <a href="/projects/dfcorp-weather-app" className="projects__button">
                 MORE DETAILS
               </a>

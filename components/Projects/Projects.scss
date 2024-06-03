@@ -63,6 +63,10 @@
         flex-direction: column;
         justify-content: space-between;
         }
+        &--flex-start{
+            justify-content: flex-start;
+        
+        }
 
     }
 
@@ -107,6 +111,9 @@
             flex-direction: column;
             align-items: center;
             padding-top: 0.5rem;
+        }
+        &--padding-top{
+            padding-top: 2rem;
         }
     }
 
