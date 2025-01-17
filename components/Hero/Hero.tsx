@@ -26,7 +26,7 @@ function Hero() {
         </p>
         <div className="hero__download-CV-container">
           <a
-            href="https://drive.google.com/file/d/1l2ez-tvxOjUAuRxzt9lsRlVsSvBlCXSy/view"
+            href="https://drive.google.com/file/d/1j5tmnkpzh5jrqz0vBLjAIfcCckU2a7U2/view"
             className="hero__download-CV"
           >
             DOWNLOAD CV
