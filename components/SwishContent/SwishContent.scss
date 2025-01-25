@@ -48,4 +48,122 @@
         max-width: 100%
     }
 
+    &__section{
+        padding: $mobile-padding $mobile-padding 0rem;
+        @include tablet{
+            padding: 2rem 3rem 0rem;
+        }
+        @include laptop{
+            @include max-width;
+        }
+    }
+
+    &__section-title{
+        @include project-page-section-title;
+       
+    }
+
+
+    &__tech-container{
+        border: $secondary-border;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        background-color: hsl(33, 100%, 87%);
+        display: inline-block;
+        @include tablet{
+            display: block;
+        }
+        @include laptop{
+            padding: 1rem;
+        }
+    }
+
+    &__tech-list{
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        padding: 0;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        margin: 0;
+        list-style-type: none;
+        @include tablet{
+            justify-content: space-around;
+        } 
+    }
+
+    &__tech-item{
+        position: relative;
+        padding-left: 1rem;
+        color: #ef6e05;
+
+        &::after{
+            content: '';
+            height: 0.4em;
+            width: 0.4em;
+            background: #ef6e05;
+            display: block;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 0.3rem;
+            left: 0.25rem;
+        }
+        @include laptop{
+            font-size: 0.8rem;
+        }
+    }
+
+    &__links-list{
+        padding: 0;
+        background-color: $primary-background;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        border-right: $secondary-border;
+        border-left: $secondary-border;
+        border-bottom: $secondary-border;
+        @include laptop{
+            padding: 1rem;
+        }
+    }
+
+    &__link-container{
+        display: flex;
+
+    }
+
+    &__item{
+        font-size: 0.7rem;
+        border-radius: $border-radius;
+        padding: 0.25rem;
+        @include laptop{
+
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: grey;
+        @include laptop{
+            font-size: 0.8rem
+        }
+    }
+
+    &__link:hover{
+        color: black;
+    }
+
+    &__icon{
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0.15rem;
+        margin-left: 0.25rem;
+        @include laptop{
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+
 }
