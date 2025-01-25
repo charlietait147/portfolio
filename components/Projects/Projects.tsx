@@ -113,22 +113,29 @@ function Projects() {
         </div>
         <div className="projects__project-container">
           <div className="projects__image-container">
-            <Image
-              className="projects__snippet"
-              src={swishImg}
-              alt="swish project snippet"
-            />
+            <Link href="/projects/swish">
+              <Image
+                className="projects__snippet"
+                src={swishImg}
+                alt="swish project snippet"
+              />
+            </Link>
           </div>
           <div className="projects__description-container projects__description-container--flex-start">
             <div className="projects__text-container">
-              <h4 className="projects__text-title projects__text-title--fill-orange"> Swish .</h4>
-              <p className="projects__text-description">A database-driven café recommendation engine</p>
+              <h4 className="projects__text-title projects__text-title--fill-orange">
+                {" "}
+                Swish .
+              </h4>
+              <p className="projects__text-description">
+                A database-driven café recommendation engine
+              </p>
             </div>
             <div className="projects__button-container projects__button-container--padding-top">
-            <a href="/projects/" className="projects__button">
-              MORE DETAILS
-            </a>
-          </div>
+              <a href="/projects/swish" className="projects__button">
+                MORE DETAILS
+              </a>
+            </div>
           </div>
         </div>
       </div>
