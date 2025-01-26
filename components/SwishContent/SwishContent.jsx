@@ -37,9 +37,7 @@ function SwishContent() {
             <li className="swish-content__tech-item">Mongoose</li>
             <li className="swish-content__tech-item">MongoDB</li>
             <li className="swish-content__tech-item">Jest</li>
-            <li className="swish-content__tech-item">
-              React Testing Library
-            </li>
+            <li className="swish-content__tech-item">React Testing Library</li>
             <li className="swish-content__tech-item">Mocha</li>
             <li className="swish-content__tech-item">Chai</li>
           </ul>
@@ -59,6 +57,21 @@ function SwishContent() {
             </Link>
           </div>
         </ul>
+      </section>
+      <section id="background" className="swish-content__section">
+        <h2 className="swish-content__section-title">Background</h2>
+        <p className="swish-content__text">
+          I wanted to leverage my skills in Next.js and Tailwind CSS to design an
+          attractive, user-friendly café recommendation and review platform. I
+          drew on my previous experience using MongoDB to build a database to manage
+          users, cafés and reviews. To refine my testing
+          abilities, I adopted a test-driven approach, in constructing tests
+          for front-end components, services, back-end unit tests for MongoDB
+          collections and integration tests to ensure seamless communication between
+          the front-end client and back-end server. In the future, I am excited to
+          develop a mobile application that incorporates the design elements of
+          the web platform and features discounts for customers to use, enhancing user engagement.
+        </p>
       </section>
     </main>
   );

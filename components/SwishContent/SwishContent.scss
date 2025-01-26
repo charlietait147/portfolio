@@ -166,4 +166,16 @@
         }
     }
 
+    &__text{
+        @include project-page-paragraph;
+        position: relative;
+       
+
+        &::after{
+        display: none;
+       
+            
+        }
+    }
+
 }
